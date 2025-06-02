@@ -22,9 +22,7 @@ reverse_geocode = RateLimiter(geolocator.reverse, min_delay_seconds=1)
 nomi = pgeocode.Nominatim('us')
 
 # Load the town-to-county mapping Excel file
-county_df = pd.read_excel(
-    "C:/Users/unc/OneDrive - University of North Carolina at Chapel Hill/irmii/townsandcounties.xlsx"
-)
+county_df = pd.read_excel("townsandcounties.xlsx")
 
 # Normalize town names for easier matching
 county_df['Town'] = county_df['Town'].str.lower().str.strip()
