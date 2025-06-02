@@ -1,0 +1,9 @@
+streamlit
+newspaper3k
+geopy
+pgeocode
+pandas
+openpyxl
+fuzzywuzzy
+python-Levenshtein
+openpyxl
